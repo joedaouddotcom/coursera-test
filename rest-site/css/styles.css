@@ -96,3 +96,33 @@ body {
     clear: both;
     margin-top: -30px;
 }
+/*END HEADER*/
+
+
+/*MEDIA QUERIES*/
+
+/*LARGE DEVICES*/
+@media (min-width:  1200px) {
+
+}
+
+/*MEDIUM DEVICES*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    #logo-img {
+        background: url('/img/logo-sm.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+}
+
+/*SMALL DEVICES*/
+@media (min-width: 768px) and (max-width: 991) {
+
+}
+
+/*EXTRA SMALL DEVICES*/
+@media (max-width: 767px) {
+
+}
