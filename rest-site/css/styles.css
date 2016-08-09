@@ -98,12 +98,20 @@ body {
 }
 /*END HEADER*/
 
+.container .jumbotron {
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+
 
 /*MEDIA QUERIES*/
 
 /*LARGE DEVICES*/
 @media (min-width:  1200px) {
-
+    .jumbotron {
+        background: url('http://placehold.it/1200') no-repeat;
+        height: 675px;
+    }
 }
 
 /*MEDIUM DEVICES*/
@@ -115,14 +123,74 @@ body {
         height: 100px;
         margin: 5px 5px 5px 0;
     }
+    /*End header*/
+
+    /*Home Page*/
+    .jumbotron {
+        background: url('http://placehold.it/992') no-repeat;
+        height: 558px;
+    }
+    /*End Home Page*/
 }
 
 /*SMALL DEVICES*/
-@media (min-width: 768px) and (max-width: 991) {
-
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Home Page*/
+    .jumbotron {
+        background: url('http://placehold.it/768') no-repeat;
+        height: 432px;
+    }
+    /*End Home Page*/
 }
+
 
 /*EXTRA SMALL DEVICES*/
 @media (max-width: 767px) {
+/*Header*/
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 { /*Restaurant Name*/
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    .navbar-brand p { /*Halal Cert*/
+        font-size: .6em;
+        margin-top: 12px;
+    }
+    .navbar-brand p img {
+        height: 20px;
+    }
+    #collapsable-nav a { /*Collapsed nav menu glyph*/
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+    }
+    #xs-deliver {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+/*End Header*/
+
+/*Home Page*/
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+    }
+/*End Home Page*/
 
 }
