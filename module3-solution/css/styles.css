@@ -80,3 +80,10 @@ body {
 }
 
 /*END CONTENT*/
+
+/*EXTRA EXTRA SMALL DEVICES eg iPhone 4*/
+@media (max-width: 479px) {
+    #single-cell {
+        height: 2500px;
+    }
+}
